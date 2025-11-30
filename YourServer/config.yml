@@ -1,0 +1,393 @@
+auto-message-time: 500
+
+prefix: "&7Your&6Server"
+info: true
+# Actually language who exists is Polish and English
+language: pl
+# Set to "-1" when you have unlimited homes
+home-limit: -1
+secure-commands: true
+msg-notify-admins: true
+update-notify-admins: true
+
+kits:
+  food:
+    items:
+      - 'apple 64 name:&7Amazing_&agreen_&capple unbreaking 5'
+  armor:
+    permission: 'kits.armor'
+    items:
+      - 'iron_helmet 1'
+      - 'iron_chestplate 1'
+      - 'iron_leggings 1'
+      - 'iron_boots 1'
+  tools:
+    items:
+      - 'iron_sword 1 lore:&dFire_sword sharpness 10 unbreaking 4'
+      - 'iron_pickaxe 1'
+      - 'iron_axe 1'
+      - 'iron_shovel 1'
+      - 'iron_hoe 1'
+
+messages:
+  join-player: true
+  quit-player: true
+  first-join-player: true
+  auto-messages:
+    - '&6Join discord (link)'
+    - '&9We have proprietary plugins'
+    - '&1For help, type "/help"'
+  help:
+    - ''
+    - '&8&m--------------{PREFIX}&8&m--------------'
+    - ''
+    - '&7Welcome &e{PLAYER} &7in help centrum.'
+    - '&7You will find helpful commands at the bottom'
+    - '&8- &7vip &8- &eInformation about player'
+    - ''
+    - '&8&m--------------{PREFIX}&8&m--------------'
+    - ''
+  kick:
+    - ''
+    - '&8&m--------------{PREFIX}&8&m--------------'
+    - ''
+    - '&7You have been kicked out from the server'
+    - '&7Administrator: &c{ADMIN}'
+    - '&7Reason: &e{REASON}'
+    - ''
+    - '&8&m--------------{PREFIX}&8&m--------------'
+    - ''
+  setspawn:
+    - '&8&m---------{PREFIX}&8&m---------'
+    - '&8>> &7Spawn set'
+    - ''
+    - '&7Location:'
+    - '&8>> &7World: &e{WORLD}'
+    - '&8>> &7X: &e{X}'
+    - '&8>> &7Y: &e{Y}'
+    - '&8>> &7Z: &e{Z}'
+    - '&8>> &7Yaw: &e{YAW}'
+    - '&8>> &7Pitch: &e{PITCH}'
+    - '&8&m---------{PREFIX}&8&m---------'
+  setwarp:
+    - '&8&m---------&9&lWARPS&8&m---------'
+    - '&7Warp &e{WARP} &7created'
+    - ''
+    - '&7Location:'
+    - '&8>> &7World: &e{WORLD}'
+    - '&8>> &7X: &e{X}'
+    - '&8>> &7Y: &e{Y}'
+    - '&8>> &7Z: &e{Z}'
+    - '&8>> &7Yaw: &e{YAW}'
+    - '&8>> &7Pitch: &e{PITCH}'
+    - '&8>> &7Permission: &e{PERMISSION}'
+    - ''
+    - '&8&m---------&9&lWARPS&8&m---------'
+  helpop-to-admins:
+    - ''
+    - '&8&m-------------------&8[&4HelpOP&8]&8&m-------------------'
+    - ''
+    - '&8>> &7Player: &e{PLAYER}'
+    - '&8>> &7Message: &e{MESSAGE}'
+    - ''
+    - '&8&m-------------------&8[&4HelpOP&8]&8&m-------------------'
+    - ''
+  adminchat:
+    - ''
+    - '&8&m-------------------&8[&4&lAdminChat&8]&8&m-------------------'
+    - ''
+    - '&8>> &7Administrator: &c{ADMIN}'
+    - '&8>> &7Message: &e{MESSAGE}'
+    - ''
+    - '&8&m-------------------&8[&4&lAdminChat&8]&8&m-------------------'
+    - ''
+  list-command:
+    - "&8>> &7Players on the server: &e{PLAYERS_COUNT}&8/&e{MAX_PLAYER_COUNT}"
+    - "&7Lista graczy: &e{LIST_PLAYERS}"
+  tpaccept:
+    - '&7You received a teleportation request from a player &e{PLAYER}'
+    - '&7Type &e/tpaccept <player> &7to accept teleportation'
+    - '&7Type &e/tpdeny <player> &7to reject teleportation'
+  ban:
+    command-chat: # After a player is banned, it will be displayed in the chat to all players
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+      - '&7Player &e{PLAYER} &7has been banned'
+      - '&7Administrator: &c{ADMIN}'
+      - '&7Reason: &e{REASON}'
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+    command-kick: # After being banned, the player gets this on the screen
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+      - '&7You have been banned'
+      - '&7Administrator: &c{ADMIN}'
+      - '&7Reason: &e{REASON}'
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+    join: # A player when he is banned and wants to join
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+      - '&7You are banned'
+      - '&7Administrator: &c{ADMIN}'
+      - '&7Reason: &e{REASON}'
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+  tempban:
+    command-chat: # After a player is banned, it will be displayed in the chat to all players
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+      - '&7Player &e{PLAYER} &7has been banned'
+      - '&7Administrator: &c{ADMIN}'
+      - '&7Date started: &e{TEMPBAN_TIME}'
+      - '&7Date ended: &e{TEMPBAN_FOR_END}'
+      - '&7Reason: &e{REASON}'
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+    command-kick: # After being temp banned, the player gets this on the screen
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+      - '&7You have been temporarily banned'
+      - '&7Administrator: &c{ADMIN}'
+      - '&7Date started: &e{TEMPBAN_TIME}'
+      - '&7Date ended: &e{TEMPBAN_FOR_END}'
+      - '&7Reason: &e{REASON}'
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+    join: # A player when he is banned and wants to join
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+      - '&7You are banned'
+      - '&7Administrator: &c{ADMIN}'
+      - '&7Date started: &e{TEMPBAN_TIME}'
+      - '&7Date ended: &e{TEMPBAN_FOR_END}'
+      - '&7Reason: &e{REASON}'
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+  mute:
+    command-message:
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+      - '&7Player &e{PLAYER} &7has been muted'
+      - '&7Administrator: &c{ADMIN}'
+      - '&7Reason: &e{REASON}'
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+    chat-muted:
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+      - '&7You are muted forever'
+      - '&7By administrator: &c{ADMIN}'
+      - '&7Reason: &e{REASON}'
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+  tempmute:
+    command-message:
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+      - '&7Player &e{PLAYER} &7has been temporarily muted'
+      - '&7By administrator: &c{ADMIN}'
+      - '&7Date started: &e{TEMPMUTE_TIME}'
+      - '&7Date end: &e{TEMPMUTE_FOR_END}'
+      - '&7Reason: &e{REASON}'
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+    chat-muted:
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+      - '&7You are temporarily muted'
+      - '&7By administrator: &c{ADMIN}'
+      - '&7Date started: &e{TEMPMUTE_TIME}'
+      - '&7Date end: &e{TEMPMUTE_FOR_END}'
+      - '&7Reason: &e{REASON}'
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+  warn:
+    warn-command: # After a player is banned, it will be displayed in the chat to all players
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+      - '&7Player &e{PLAYER} &7has been warned'
+      - '&7Administrator: &c{ADMIN}'
+      - '&7Reason: &e{REASON}'
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+    info-command:
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+      - '&7Amount of warnings player &e{PLAYER}&7: &e{WARN_AMOUNT}'
+      - '{WARNINFO_FORMAT}' # Informations format is in language file
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+  tempwarn:
+    tempwarn-command:
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+      - '&7Player &e{PLAYER} &7has been temporarily warned'
+      - '&7By administrator: &c{ADMIN}'
+      - '&7Date started: &e{TEMPWARN_TIME}'
+      - '&7Date end: &e{TEMPWARN_TIME_FOR_END}'
+      - '&7Reason: &e{REASON}'
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+    info-command:
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+      - '&7Amount of temporary warnings player &e{PLAYER}&7: &e{TEMPWARN_AMOUNT}'
+      - '{TEMPWARNINFO_FORMAT}' # Informations format is in language file
+      - ''
+      - '&8&m--------------{PREFIX}&8&m--------------'
+      - ''
+  spawn:
+    title: true
+    chat: true
+    actionbar: true
+    # All messages in message properties file
+  check:
+    # Prefix of check and message when player is checking are in message properties file
+    check:
+      target: # Send this message to target when he is checking
+        - ''
+        - '&8&m----------{CHECK_PREFIX}&8&m----------'
+        - ''
+        - '&7You are being checked'
+        - '&8>> &7You have 3 minutes to join discord &6discord.gg/yourinvite&7!'
+        - ''
+        - '&7Penalties:'
+        - '&8>> &7Admission: &63 days'
+        - '&8>> &7Cheat detection: &67 days'
+        - '&8>> &7Signing out while checking: &6Forever'
+        - ''
+        - '&8&m----------{CHECK_PREFIX}&8&m----------'
+        - ''
+      checker:
+        - '&7You check the player &e{CHECK_NAME}'
+    clear:
+      - ''
+      - '&8&m----------{CHECK_PREFIX}&8&m----------'
+      - ''
+      - '&8>> &7You are clear. You can go back to the game and not cheat.'
+      - ''
+      - '&8&m----------{CHECK_PREFIX}&8&m----------'
+      - ''
+    cheater: # After being checked, the player gets this on the screen
+      - ''
+      - '&8&m----------{CHECK_PREFIX}&8&m----------'
+      - ''
+      - '&8>> &7You are a cheater ;('
+      - '&8>> &7Check administrator: &c{ADMIN}'
+      - ''
+      - '&8&m----------{CHECK_PREFIX}&8&m----------'
+      - ''
+    logout:
+      - ''
+      - '&8&m--------------{CHECK_PREFIX}&8&m--------------'
+      - ''
+      - '&8>> &7Player &4{CHECK_PLAYER} &7logged out while checking!'
+      - '&8>> &7Check administrator: &c{ADMIN}'
+      - ''
+      - '&8&m--------------{CHECK_PREFIX}&8&m--------------'
+      - ''
+    quit-reason: # you can use {PREFIX}, {CHECK_PREFIX} and {ADMIN}
+      - '&7You left while you were being checked by the administrator &c{ADMIN}'
+  chat:
+    on:
+      - ''
+      - '&8&m----------{PREFIX}&8&m-------'
+      - ''
+      - '&7Chat has been &a&lENABLED &7by &4{ADMIN}'
+      - ''
+      - '&8&m----------{PREFIX}&8&m-------'
+      - ''
+    off:
+      - ''
+      - '&8&m----------{PREFIX}&8&m-------'
+      - ''
+      - '&7Chat has been &a&lDISABLED &7by &4{ADMIN}'
+      - ''
+      - '&8&m----------{PREFIX}&8&m-------'
+      - ''
+    clear:
+      - ''
+      - '&8&m----------{PREFIX}&8&m-------'
+      - ''
+      - '&7Chat has been &b&lCLEARED &7by &4{ADMIN}'
+      - ''
+      - '&8&m----------{PREFIX}&8&m-------'
+      - ''
+
+permission:
+  adminchat: 'yourserver.adminchat'
+  chat: 'yourserver.chat'
+  chatcolor: 'yourserver.chatcolor'
+  enderchest: 'yourserver.ec'
+  enderchest-player: 'yourserver.enderchest-player'
+  feed: 'yourserver.feed'
+  feed-player: 'yourserver.feed.players'
+  fly: 'yourserver.fly'
+  fly-player: 'yourserver.fly-player'
+  heal: 'yourserver.heal'
+  heal-player: 'yourserver.heal-player'
+  invsee: 'yourserver.invsee'
+  nick: 'yourserver.nick'
+  nick-player: 'yourserver.nick-player'
+  tptome: 'yourserver.tp.to.me' #This is teleport to me from command /s
+  vanish: 'yourserver.vanish'
+  vanish-player: 'yourserver.vanish.players'
+  gamemode: 'yourserver.gamemode'
+  gamemode-player: 'yourserver.gamemode.players'
+  setcheck: 'yourserver.check.set'
+  check: 'yourserver.check'
+  mute: 'yourserver.mute'
+  tempmute: 'yourserver.tempmute'
+  unmute: 'yourserver.unmute'
+  teleport: 'yourserver.teleport'
+  ban: 'yourserver.ban'
+  tempban: 'yourserver.tempban'
+  unban: 'yourserver.unban'
+  god: 'yourserver.godmode'
+  godmode-player: 'yourserver.godmode.players'
+  warn: 'yourserver.warn'
+  tempwarn: 'yourserver.tempwarn'
+  warninfo: 'yourserver.warninfo'
+  tempwarninfo: 'yourserver.tempwarninfo'
+  delwarn: 'yourserver.delwarn'
+  deltempwarn: 'yourserver.deltempwarn'
+  kick: 'yourserver.kick'
+  setspawn: 'yourserver.setspawn'
+  setwarp: 'yourserver.setwarp'
+  delwarp: 'yourserver.delwarp'
+  luckperms: 'yourserver.luckperms'
+  helpop-check: 'yourserver.helpop-check'
+  id: 'yourserver.id'
+  home-player: 'yourserver.home-player'
+  homes-player: 'yourserver.homes-player'
+  bypass:
+    check: 'yourserver.check.bypass'
+    chat: 'yourserver.chat.bypass'

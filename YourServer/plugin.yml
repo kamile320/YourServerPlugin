@@ -1,0 +1,115 @@
+main: delivetator.YourServer
+version: 1.4
+name: YourServer
+author: Delivetator
+description: Plugin for all servers
+api-version: 1.13
+
+commands:
+  fly:
+    description: On/Off flying
+  heal:
+    description: Heal yourself
+  feed:
+    description: Feed yourself
+  invsee:
+    description: Shows the inventory of the given player
+  enderchest:
+    aliases: [ec]
+    description: Showing your ender chest
+  gamemode:
+    aliases: [gm]
+    description: Set your game mode
+  s:
+    description: Teleport to you
+  nick:
+    description: Set your own nickname
+  msg:
+    description: Send a private message to the given player
+  vanish:
+    description: It makes you invisible
+  godmode:
+    aliases: [god]
+    description: On/Off a god mode
+  spawn:
+    description: Teleport to spawn
+  setspawn:
+    description: Set a spawn place
+  kick:
+    description: Kick player
+  mute:
+    description: Mute player
+  tempmute:
+    description: Temporarily mute a player
+  unmute:
+    description: Unmute player
+  ban:
+    description: Ban player
+  tempban:
+    description: Temporarily banning the player
+  unban:
+    description: Unban player
+  sethome:
+    description: Set your home
+  home:
+    description: Teleport to the given home
+  homes:
+    description: Home list
+  delhome:
+    description: Del a given and exists home
+  setwarp:
+    description: Set a warp
+  warp:
+    description: Teleport to the given warp
+  warps:
+    description: Warp list
+  delwarp:
+    description: Del a given and exists warp
+  kit:
+    description: Get a kit
+  warn:
+    description: Give a warn to player
+  tempwarn:
+    description: Temporaily warning the player
+  warninfo:
+    description: Information about player's warnings
+  tempwarninfo:
+    description: Information about player's temporary warnings
+  delwarn:
+    description: Delete a warn from player
+  deltempwarn:
+    description: Delete a temporary warn from player
+  online:
+    aliases: [list]
+    description: List players who are on the server
+  help:
+    aliases: [pomoc]
+    description: Displays help
+  tpa:
+    description: Sends a teleportation request to the given player
+  tpaccept:
+    description: Accepts a request to teleport the given player
+  tpdeny:
+    description: Refuses a request to teleport the given player
+  helpop:
+    description: Send message to server administration
+
+  chat:
+    description: Chat management - enabling, disabling, clearing
+  adminchat:
+    aliases: [ac]
+    description: Chat for administration only
+  yourserver:
+    aliases: [twojserwer]
+    description: Default command from this plugin
+  teleport:
+    aliases: [tp]
+    description: Teleport to the cords or to the player
+  statistics:
+    aliases: [statystyki, staty]
+    description: Shows player stats and top 10
+  id:
+    description: Displays the player's ID
+  check:
+    description: Check players
+    aliases: [sprawdz]
